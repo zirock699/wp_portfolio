@@ -1,89 +1,233 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#004080">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hichem's Portfolio - Home Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="assets/Hichem.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/main.js" defer></script>
+    <!-- Contact Form Modal -->
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.0.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.0.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.0.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+</head>
+<body>
+<!--<div id="splashScreen" class="splash-screen">-->
+<!--    <img src="assets/Hichem.png" alt="App Logo" class="splash-logo">-->
+<!--    <h1>Welcome to Hichem's Portfolio</h1>-->
+<!--</div>-->
+
+<div id="splashScreen" class="splash-screen">
+    <svg
+            class="animated-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 400 200"
+    >
+        <!-- Top-left bracket -->
+        <line x1="110" y1="85" x2="110" y2="105" stroke="black" stroke-width="4" class="bracket"></line>
+        <line x1="110" y1="85" x2="130" y2="85" stroke="black" stroke-width="4" class="bracket"></line>
+
+        <!-- Bottom-left bracket -->
+        <line x1="110" y1="150" x2="110" y2="170" stroke="black" stroke-width="4" class="bracket"></line>
+        <line x1="110" y1="170" x2="130" y2="170" stroke="black" stroke-width="4" class="bracket"></line>
+
+        <!-- Top-right bracket -->
+        <line x1="290" y1="85" x2="290" y2="105" stroke="#007bff" stroke-width="4" class="bracket"></line>
+        <line x1="290" y1="85" x2="270" y2="85" stroke="#007bff" stroke-width="4" class="bracket"></line>
+
+        <!-- Bottom-right bracket -->
+        <line x1="290" y1="150" x2="290" y2="170" stroke="#007bff" stroke-width="4" class="bracket"></line>
+        <line x1="290" y1="170" x2="270" y2="170" stroke="#007bff" stroke-width="4" class="bracket"></line>
+
+        <!-- "Hichem" text -->
+        <text
+                x="200"
+                y="125"
+                font-size="48"
+                fill="white"
+                font-family="Arial, sans-serif"
+                text-anchor="middle"
+                dominant-baseline="middle"
+                class="logo-text"
+        >
+            Hichem
+        </text>
+    </svg>
+    <p class="splash-message" >Welcome to Hichem's Portfolio</p>
+</div>
+
+
+
+<div class="wrapper">
+    <!-- Your main content -->
+    <div id="header-component"></div> <!-- Header will be injected here -->
+    <main>
+
+
+        <section class="banner">
+            <div class="banner-overlay" >
+                <div class="text-background">
+                <h1>Welcome to My Online Resume</h1>
+                <a href="skills.html" class="cta-button">Explore Skills</a>
+                </div>
+            </div>
+            <div class="slider">
+                <img src="assets/banner/image1.png" alt="Image 1">
+                <img src="assets/banner/image2.png" alt="Image 2">
+                <img src="assets/banner/image3.png" alt="Image 3">
+            </div>
+        </section>
+
+
+        <section class="projects">
+            <h2>Featured Projects</h2>
+            <div class="grid-container">
+                <div class="project-card">
+                    <h3>Currency Converter Web App</h3>
+                    <p>A dynamic currency conversion tool adhering to modern web standards. Includes responsive design and validation features.</p>
+                    <a href="currency_converter.html" class="project-link">Try It Out</a>
+                </div>
+                <div class="project-card">
+                    <h3>Fuel Cost Forecaster</h3>
+                    <p>An interactive tool forecasting UK heating fuel costs, leveraging real historical data and chart visualizations.</p>
+
+                    <a href="fuel_forecaster.html" class="project-link">Try It Out</a>
+                </div>
+                <div class="project-card">
+                    <h3>Responsive E-Commerce Platform</h3>
+                    <p>Developed a fully responsive e-commerce site with a modern UI, interactive product pages, and optimized checkout flow, ensuring seamless performance across all devices.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Website with Dark Mode</h3>
+                    <p>Designed a portfolio site featuring light and dark mode options, showcasing a clean aesthetic and optimized for fast loading times using progressive web app (PWA) principles.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Real-Time Chat Application</h3>
+                    <p>Built a real-time chat application with WebSocket integration, delivering a smooth and responsive user experience with rich media sharing and user status indicators.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Interactive Data Dashboard</h3>
+                    <p>Created a data visualization dashboard for business insights, using Chart.js and D3.js for dynamic charts and interactive filtering options.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Multi-Language Travel Blog</h3>
+                    <p>Developed a travel blog with multi-language support and a minimalist design, enhancing accessibility and reach for a global audience.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Cross-Platform Weather App</h3>
+                    <p>Built a weather forecasting app with a sleek, mobile-friendly UI and dynamic weather animations, providing accurate forecasts and geolocation-based data.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Interactive Online Resume Builder</h3>
+                    <p>Developed an online resume builder tool that allows users to create, customize, and download personalized resumes. Features drag-and-drop sections, real-time preview, and export options in PDF format.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section id="testimonials" class="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial-grid">
+                <blockquote>
+                    <p>"Hichem delivered an outstanding web application for our project, on time and with excellent attention to detail."</p>
+                    <cite>- John D., Project Manager</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Incredible work! Hichem’s designs were creative and perfectly aligned with our brand"</p>
+                    <cite>- Sarah L., Marketing Director</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Hichem is a true professional—his coding skills are top-notch and his solutions were innovative"</p>
+                    <cite>- Mark R., Tech Lead</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Excellent experience working with Hichem. He’s detail-oriented and very responsive to feedback."</p>
+                    <cite>- Emily K., Product Owner</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Hichem’s work exceeded our expectations! Highly recommended for web development projects."</p>
+                    <cite>- Alice P., Business Owner</cite>
+                </blockquote>
+                <blockquote>
+                    <p>"Very professional and proactive. Hichem’s portfolio website showed his versatility and skill."</p>
+                    <cite>- David S., Career Coach</cite>
+                </blockquote>
+            </div>
+        </section>
+
+
+
+        <section class="tech-stack">
+            <h2>My Tech Stack</h2>
+            <div class="stack-grid">
+                <div class="stack-item">
+                    <img  src="assets/tech/HTML5_logo_and_wordmark.svg.png" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="stack-item">
+                    <img  alt="CSS3 & SASS" src="assets/tech/CSS3_logo.svg.png">
+                    <p>CSS3 & SASS</p>
+                </div>
+                <div class="stack-item">
+                    <img src="assets/tech/javascript-logo-javascript-icon-transparent-free-png.webp" alt="JavaScript & TypeScript">
+
+
+                    <p>JavaScript</p>
+                </div>
+                <div class="stack-item">
+                    <img src="assets/tech/react-original-wordmark-icon-840x1024-vhmauxp6.png"  alt="React.js">
+                    <p>React.js</p>
+                </div>
+                <div class="stack-item">
+                    <img  src="assets/tech/node-js-icon-454x512-nztofx17.png" alt="Node.js & Express">
+
+                    <p>Node.js</p>
+                </div>
+                <div class="stack-item">
+                    <img src="assets/tech/Git_icon.svg.png" height="2048"  alt="Git & GitHub">
+                    <p>Git</p>
+                </div>
+                <div class="stack-item">
+                    <img src="assets/tech/97_Docker_logo_logos-512.webp"  alt="Docker">
+                    <p>Docker</p>
+                </div>
+                <div class="stack-item">
+                    <img src="assets/tech/Amazon_Web_Services_Logo.svg.png" alt="AWS">
+                    <p>AWS</p>
+                </div>
+                <div class="stack-item">
+                    <img src="assets/tech/Jenkins_logo.svg (1).png" alt="CI/CD with Jenkins">
+                    <p>Jenkins</p>
+                </div>
+                <div class="stack-item">
+                    <img  src="assets/tech/owasp_logo_flat2_icon.png" alt="Application Security (OWASP)">
+                    <p>AppSec (OWASP)</p>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <div id="robot" class="robot">
+        <i class="fas fa-robot"></i> <!-- Font Awesome robot icon -->
+        <span class="robot-tooltip">Click me for helpful tips!</span>
+        <div id="robot-message" class="robot-message hidden"></div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <div id="footer-component"></div> <!-- Footer will be injected here -->
+</div>
+<script type="module" src="js/contactForm.js" defer></script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+</body>
 </html>
