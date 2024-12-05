@@ -1,0 +1,90 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+.interests-header {
+    background-image: url('https://images.unsplash.com/photo-1660129071363-d13390de351f?q=80&w=1974&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    width: 100%;
+}
+
+.interests-header h1 {
+    font-size: 2.5rem;
+}
+
+.interests-header p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Image-Centric Layout */
+.image-grid {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.image-grid h2 {
+    font-size: 1.75rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid-content {
+    padding: 1rem;
+}
+
+.grid-content h3 {
+    font-size: 1.2rem;
+    color: #004080;
+    margin-bottom: 0.5rem;
+}
+
+.grid-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.grid-item:hover {
+    transform: scale(1.03);
+}

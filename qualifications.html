@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#004080">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hichem's Portfolio - Qualifications</title>
+    <link rel="stylesheet" href="css/qualifications.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="assets/Hichem.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+<div id="splashScreen" class="splash-screen">
+    <svg
+            class="animated-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 400 200"
+    >
+        <!-- Top-left bracket -->
+        <line x1="110" y1="85" x2="110" y2="105" stroke="black" stroke-width="4" class="bracket"></line>
+        <line x1="110" y1="85" x2="130" y2="85" stroke="black" stroke-width="4" class="bracket"></line>
+
+        <!-- Bottom-left bracket -->
+        <line x1="110" y1="150" x2="110" y2="170" stroke="black" stroke-width="4" class="bracket"></line>
+        <line x1="110" y1="170" x2="130" y2="170" stroke="black" stroke-width="4" class="bracket"></line>
+
+        <!-- Top-right bracket -->
+        <line x1="290" y1="85" x2="290" y2="105" stroke="#007bff" stroke-width="4" class="bracket"></line>
+        <line x1="290" y1="85" x2="270" y2="85" stroke="#007bff" stroke-width="4" class="bracket"></line>
+
+        <!-- Bottom-right bracket -->
+        <line x1="290" y1="150" x2="290" y2="170" stroke="#007bff" stroke-width="4" class="bracket"></line>
+        <line x1="290" y1="170" x2="270" y2="170" stroke="#007bff" stroke-width="4" class="bracket"></line>
+
+        <!-- "Hichem" text -->
+        <text
+                x="200"
+                y="125"
+                font-size="48"
+                fill="white"
+                font-family="Arial, sans-serif"
+                text-anchor="middle"
+                dominant-baseline="middle"
+                class="logo-text"
+        >
+            Qualifications
+        </text>
+    </svg>
+    <p class="splash-message" >My journey, one step at a time!</p>
+</div>
+<div class="wrapper">
+    <div id="header-component"></div> <!-- Header will be injected here -->
+    <header class="qualifications-header">
+        <div class="header-overlay">
+            <h1>Qualifications & Experience</h1>
+            <p>Discover my educational background and professional journey.</p>
+        </div>
+    </header>
+    <main>
+        <!-- Education Section -->
+        <section class="qualifications-section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master's in Computer Science</h3>
+                <p><strong>Institution:</strong> University of Staffordshire</p>
+                <p><strong>Duration:</strong> 2022-Present</p>
+                <p>Specialization in DevOps, system design, and Enterprise Systems.</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor's in Computer Science</h3>
+                <p><strong>Institution:</strong>University of Staffordshire</p>
+                <p><strong>Duration:</strong> 2018-2022</p>
+                <p><strong> Grade:</strong> First Class</p>
+            </div>
+
+        </section>
+
+        <!-- Experience Section -->
+        <section class="qualifications-section">
+            <h2>Professional Experience</h2>
+            <div class="experience-item">
+                <h3>DevSecOps Solutions Consultant</h3>
+                <p><strong>Company:</strong> OpenText</p>
+                <p><strong>Duration:</strong> 2022-Present</p>
+                <p>Leading secure CI/CD pipeline integrations and improving system reliability.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Web Developer</h3>
+                <p><strong>Company:</strong> HWC</p>
+                <p><strong>Duration:</strong> 2018-2022</p>
+                <p>
+                    Built scalable web applications, optimized front-end performance, and implemented secure user authentication systems.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3>Intern Software Engineer (Backend)</h3>
+                <p><strong>Company:</strong> MyTech</p>
+                <p><strong>Duration:</strong> 2017-2018</p>
+                <p>
+                    Designed and maintained RESTful APIs, integrated database solutions, and optimized server-side performance for a microservices architecture.
+                </p>
+            </div>
+
+        </section>
+    </main><div id="robot" class="robot">
+    <i class="fas fa-robot"></i> <!-- Font Awesome robot icon -->
+    <span class="robot-tooltip">Click me for helpful tips!</span>
+    <div id="robot-message" class="robot-message hidden"></div>
+</div>
+    <div id="footer-component"></div> <!-- Footer will be injected here -->
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

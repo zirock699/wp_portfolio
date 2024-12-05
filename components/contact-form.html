@@ -1,0 +1,53 @@
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Send a Message</h2>
+        <form id="contactForm" method="post" class="contact-form">
+            <!-- Name -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Subject -->
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <!-- Message -->
+            <label for="message">Message</label>
+            <textarea id="message" style="resize: none;margin-bottom:0px " name="message" rows="4" maxlength="500" required
+                      oninput="document.getElementById('charCount').textContent = this.value.length;"></textarea>
+            <div class="char-counter">
+                <span id="charCount">0</span>/500 characters
+            </div>
+
+            <!-- Random Math Problem -->
+            <div class="not-a-robot">
+                <label for="captcha-container" class="math-problem-container">
+                    <span id="mathProblem">Solve this: </span>
+                    <input type="number" id="captcha" name="captcha" required>
+                </label>
+            </div>
+
+            <!-- Terms and Privacy Notice -->
+            <div class="form-agreement">
+                <p>
+                    By submitting this form, you agree to our
+                    <a href="terms.html" target="_blank">Terms of Service</a> and
+                    <a href="privacy.html" target="_blank">Privacy Policy</a>.
+                </p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                <a href="#" id="resetButton" onclick="document.getElementById('contactForm').reset();
+    document.getElementById('charCount').textContent = 0;
+    document.getElementById('submit').disabled = true;">Reset</a>
+                <button type="submit" id="submit" disabled>Send Message</button>
+            </div>
+        </form>
+        <div id="formResponse"></div>
+    </div>
+</div>

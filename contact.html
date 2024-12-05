@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#004080">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hichem's Portfolio - Contact Me</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="assets/Hichem.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+
+<div id="splashScreen" class="splash-screen">
+    <svg
+            class="animated-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 400 200"
+    >
+        <!-- Top-left bracket -->
+        <line x1="110" y1="85" x2="110" y2="105" stroke="black" stroke-width="4" class="bracket"></line>
+        <line x1="110" y1="85" x2="130" y2="85" stroke="black" stroke-width="4" class="bracket"></line>
+
+        <!-- Bottom-left bracket -->
+        <line x1="110" y1="150" x2="110" y2="170" stroke="black" stroke-width="4" class="bracket"></line>
+        <line x1="110" y1="170" x2="130" y2="170" stroke="black" stroke-width="4" class="bracket"></line>
+
+        <!-- Top-right bracket -->
+        <line x1="290" y1="85" x2="290" y2="105" stroke="#007bff" stroke-width="4" class="bracket"></line>
+        <line x1="290" y1="85" x2="270" y2="85" stroke="#007bff" stroke-width="4" class="bracket"></line>
+
+        <!-- Bottom-right bracket -->
+        <line x1="290" y1="150" x2="290" y2="170" stroke="#007bff" stroke-width="4" class="bracket"></line>
+        <line x1="290" y1="170" x2="270" y2="170" stroke="#007bff" stroke-width="4" class="bracket"></line>
+
+        <!-- "Hichem" text -->
+        <text
+                x="200"
+                y="125"
+                font-size="48"
+                fill="white"
+                font-family="Arial, sans-serif"
+                text-anchor="middle"
+                dominant-baseline="middle"
+                class="logo-text"
+        >
+            Contact
+        </text>
+    </svg>
+    <p class="splash-message" >Let’s create something amazing together!</p>
+</div>
+<div class="wrapper">
+    <!-- Header Section -->
+    <div id="header-component"></div>
+    <header class="contact-header">
+        <div class="header-overlay">
+            <h1>Contact Me</h1>
+            <p>Let's connect! Reach out for collaborations, questions, or just to say hello.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-info">
+            <div class="info-grid">
+                <!-- Card 1: Address -->
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p>1234 Congleton, Cheshire, UK</p>
+                </div>
+
+                <!-- Card 2: Phone -->
+                <div class="info-item"><a href="tel:+44 123 456 789">
+                    <i class="fas fa-phone"></i></a>
+                    <h3>Phone</h3>
+                    <p>+44 123 456 789</p>
+                </div>
+
+                <!-- Card 3: Email -->
+                <div class="info-item"><a href="mailto:hichem.elwerghi@gmail.com">
+                    <i class="fas fa-envelope"></i></a>
+                    <h3>Email</h3>
+                    <p>hichem.elwerghi@gmail.com</p>
+                </div>
+
+                <!-- Card 4: Social Media -->
+                <div class="info-item social-media">
+                    <h3>Follow Me</h3>
+                    <a href="https://www.linkedin.com/in/hichem-elwerghi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/HichemElwerghi" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+
+
+
+                <!-- Card 6: Working Hours -->
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Working Hours</h3>
+                    <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                    <p>Sat-Sun: Closed</p>
+                </div>
+
+                <!-- Card 7: Support -->
+                <div class="info-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>Support</h3>
+                    <p>For technical assistance, email: hichem.elwerghi@gmail.com</p>
+                </div>
+
+                <!-- Card 8: FAQ -->
+                <div class="info-item" onclick="openFaqPopup()" style="cursor: pointer;">
+
+                        <i class="fas fa-question-circle"></i>
+                        <h3>FAQs</h3>
+                        <p>Click to view frequently asked questions</p>
+
+                </div>
+
+                <!-- FAQ Popup -->
+                <div id="faq-popup" class="popup hidden">
+                    <div class="popup-content">
+                        <button class="close-button" onclick="closeFaqPopup()">&times;</button>
+                        <h2>Frequently Asked Questions</h2>
+                        <ul class="faq-list">
+                            <li><strong>Q:</strong> How can I contact you? <br>
+                                <strong>A:</strong> You can reach me via email at hichem.elwerghi@gmail.com</li>
+                            <li><strong>Q:</strong> What services do you offer? <br>
+                                <strong>A:</strong> I specialize in web development, DevSecOps, and digital transformation solutions.</li>
+                            <li><strong>Q:</strong> Are you open to collaborations? <br>
+                                <strong>A:</strong> Yes, I’m always looking for exciting collaboration opportunities.</li>
+                            <li><strong>Q:</strong> Do you work remotely? <br>
+                                <strong>A:</strong> Yes, I’m experienced in working remotely with global teams.</li>
+                            <li><strong>Q:</strong> How can I see your portfolio? <br>
+                                <strong>A:</strong> Check out my portfolio sections for projects and case studies.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 5: Contact Me -->
+                <div class="info-item highlight-card">
+                    <button class="contact-button">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="robot" class="robot">
+        <i class="fas fa-robot"></i> <!-- Font Awesome robot icon -->
+        <span class="robot-tooltip">Click me for helpful tips!</span>
+        <div id="robot-message" class="robot-message hidden"></div>
+    </div>
+    <div id="footer-component"></div> <!-- Footer Section -->
+</div>
+
+<script type="module" src="js/contactForm.js" defer></script>
+<script src="js/main.js"></script>
+</body>
+</html>

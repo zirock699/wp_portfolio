@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Cost Forecaster</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/forecaster.css">
+    <link rel="icon" href="assets/Hichem.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+<div class="wrapper">
+    <!-- Header -->
+    <div id="header-component"></div>
+
+    <!-- Page Content -->
+    <header class="forecaster-header">
+        <div class="header-overlay">
+            <h1>Fuel Cost Forecaster</h1>
+            <p>Explore historical and projected fuel costs using interactive charts.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Forecaster Section -->
+        <section class="forecaster">
+            <h2>Fuel Costs Over Time</h2>
+
+            <!-- Mode Controls -->
+            <div class="chart-controls">
+                <button id="historicalMode" class="mode-button">Historical Mode</button>
+                <button id="forecastMode" class="mode-button">Forecast Mode</button>
+            </div>
+
+
+
+
+
+            <div class="chart-scroll-wrapper">
+                <div class="chart-container">
+                    <canvas id="fuelCostChart"></canvas>
+                </div>
+            </div>
+            <!-- Navigation Controls -->
+            <div id="navControls" class="nav-controls">
+                <button id="prevButton" class="nav-button">Previous 12 Months</button>
+                <button id="nextButton" class="nav-button">Next 12 Months</button>
+            </div>
+            <!-- Filter Controls -->
+            <div class="filter-controls" style="display: none">
+                <h3>Select Fuel Types</h3>
+                <div>
+                    <label><input type="checkbox" id="solidFuels" checked> Solid Fuels</label>
+                    <label><input type="checkbox" id="gas" checked> Gas</label>
+                    <label><input type="checkbox" id="electricity" checked> Electricity</label>
+                    <label><input type="checkbox" id="liquidFuels" checked> Liquid Fuels</label>
+                </div>
+            </div>
+
+            <!-- Error Message Container -->
+            <div id="errorMessage" class="error-message" style="display: none;">
+                <p></p>
+            </div>
+        </section>
+    </main>
+    <div id="robot" class="robot">
+        <i class="fas fa-robot"></i> <!-- Font Awesome robot icon -->
+        <span class="robot-tooltip">Click me for helpful tips!</span>
+        <div id="robot-message" class="robot-message hidden"></div>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer-component"></div>
+</div>
+<script src="js/forecaster.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="module" src="js/contactForm.js" defer></script>
+<script src="js/currencyConverter.js" defer></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Banner-style Header */
+.about-header {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1530825894095-9c184b068fcb?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Replace with your image path */
+    background-color: #333; /* Fallback color */
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* Overlay for text contrast */
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    padding: 1rem;
+    width: 100%;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-top: 0.5rem;
+}
+
+
+
+.contact-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-link:hover {
+    background-color: #218838;
+}
+.intro, .contact {
+    text-align: center;
+    margin: 2rem;
+}
+
+
+.styled-list {
+    list-style: none; /* Remove default list styling */
+    counter-reset: list-counter; /* Initialize custom counter */
+}
+
+.styled-list li {
+    counter-increment: list-counter; /* Increment counter for each list item */
+    position: relative; /* Position marker relative to text */
+    padding-left: 2rem; /* Space for the custom marker */
+}
+
+.styled-list li::before {
+    content: counter(list-counter, upper-alpha) ".";
+    position: absolute;
+    left: 0;
+    color: #00aaff; /* Color of the alphabet marker */
+    font-weight: bold; /* Optional: make it bold */
+}
+#fun-facts ol[type="a"] {
+    list-style-type: lower-alpha; /* For lowercase letters */
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Section headings */
+main h2 {
+    font-size: 1.75rem;
+    color: #222;
+    margin-top: 2rem;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+main p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Lists */
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    padding-left: 1.2rem;
+    margin-bottom: 0.75rem;
+    position: relative;
+    color: #555;
+}
+
+/* Custom bullet for list items */
+main ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00aaff;
+    font-size: 1.2rem;
+}
+
+/* Emphasis within list items */
+main ul li strong {
+    color: #333;
+}
